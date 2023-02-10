@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado SYSTEM 'multinacional.dtd'>
+<listado>
+    <futuro precio="4">
+        <producto>Pan</producto>
+        <mercado>Francia</mercado>
+        <ciudad_procedencia>
+            <madrid />
+        </ciudad_procedencia>
+    </futuro>
+    <divisa precio="324">
+        <nombre_divisa>Dolar</nombre_divisa>
+        <tipo_cambio>43224</tipo_cambio>
+        <tipo_cambio>36436</tipo_cambio>
+        <tipo_cambio>43895</tipo_cambio>
+        <ciudad_procedencia>
+            <nuevayork />
+        </ciudad_procedencia>
+    </divisa>
+    <bono precio="4376543" estable="si">
+        <pais_de_procedencia>Alemania</pais_de_procedencia>
+        <valor_deseado>363463</valor_deseado>
+        <valor_minimo>123</valor_minimo>
+        <valor_maximo>4235</valor_maximo>
+        <ciudad_procedencia>
+            <frankfurt />
+        </ciudad_procedencia>
+    </bono>
+    <letra precio="87">
+        <tipo_interes>34%</tipo_interes>
+        <pais_emisor>
+            <Japon />
+        </pais_emisor>
+        <ciudad_procedencia>
+            <tokio />
+        </ciudad_procedencia>
+    </letra>
+</listado>

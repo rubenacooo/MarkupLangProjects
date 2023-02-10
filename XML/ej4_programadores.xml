@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas [
+    <!ELEMENT listafacturas (factura+)>
+    <!ELEMENT factura (emisor, pagador, importe)>
+    <!ATTLIST factura fecha CDATA #IMPLIED>
+    <!ELEMENT emisor (nombre, volumenventas?)>
+    <!ATTLIST emisor cif ID #REQUIRED>
+    <!ELEMENT pagador (nombre, volumenventas?)>
+    <!ATTLIST pagador cif ID #REQUIRED>
+    <!ELEMENT importe (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT volumenventas (#PCDATA)>
+]>
+<listafacturas>
+
+    <factura fecha="19/01/2023">
+        <emisor cif="L26837431">
+            <nombre>Rubén Fernández</nombre>
+            <volumenventas>100</volumenventas>
+        </emisor>
+        <pagador cif="M634127435">
+            <nombre>Nicolás Chamero</nombre>
+            <volumenventas>200</volumenventas>
+        </pagador>
+        <importe>300</importe>
+    </factura>
+
+    <factura fecha="20/01/2023">
+        <emisor cif="S345193475">
+            <nombre>Antonio Sánchez</nombre>
+        </emisor>
+        <pagador cif="P341983492">
+            <nombre>Adrián Borio</nombre>
+            <volumenventas>50</volumenventas>
+        </pagador>
+        <importe>50</importe>
+    </factura>
+
+</listafacturas>

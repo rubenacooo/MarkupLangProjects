@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE operaciones [
+    <!ELEMENT operaciones (operacion+)>
+    <!ELEMENT operacion (venta | compra)+>
+    <!ELEMENT venta (titulosvendidos)>
+    <!ELEMENT titulosvendidos (titulo+, cantidad, entregado, importe)>
+    <!ELEMENT compra (tituloscomprados)>
+    <!ELEMENT tituloscomprados (titulo+, proveedor, fecha)>
+    <!ELEMENT fecha (dia, mes, anio)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT entregado (#PCDATA)>
+    <!ELEMENT importe (#PCDATA)>
+    <!ATTLIST importe moneda CDATA #REQUIRED>
+    <!ELEMENT proveedor (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+]>
+<operaciones>
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo>Vendido</titulo>
+                <cantidad>2</cantidad>
+                <entregado>Si</entregado>
+                <importe moneda="EURO">15</importe>
+            </titulosvendidos>
+        </venta>
+        <compra>
+            <tituloscomprados>
+                <titulo>Comprado</titulo>
+                <proveedor>Juan</proveedor>
+                <fecha>
+                    <dia>19</dia>
+                    <mes>01</mes>
+                    <anio>2023</anio>
+                </fecha>
+            </tituloscomprados>
+        </compra>
+    </operacion>
+
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo>Vendido2</titulo>
+                <cantidad>5</cantidad>
+                <entregado>No</entregado>
+                <importe moneda="EURO">50</importe>
+            </titulosvendidos>
+        </venta>
+    </operacion>
+</operaciones>

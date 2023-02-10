@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos [
+<!ELEMENT listacursos (curso+, asignaturas)>
+<!ELEMENT curso (alumno+)>
+<!ELEMENT alumno (dni, nombre, apellido, apellido2?)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT asignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre, profesor)>
+<!ATTLIST asignatura codigo ID #REQUIRED>
+<!ELEMENT profesor (nrp, nombre, apellido, apellido2?)>
+<!ELEMENT nrp (#PCDATA)>
+]>
+
+<listacursos>
+
+    <curso>
+        <alumno>
+            <dni>26837431L</dni>
+            <nombre>Rubén</nombre>
+            <apellido>Fernández</apellido>
+            <apellido2>Ramos</apellido2>
+        </alumno>
+        <alumno>
+            <dni>4756234M</dni>
+            <nombre>Oscar</nombre>
+            <apellido>Fernández</apellido>
+        </alumno>
+    </curso>
+
+    <asignaturas>
+        <asignatura codigo="BIO">
+            <nombre>Biología</nombre>
+            <profesor>
+                <nrp>ola</nrp>
+                <nombre>Curro</nombre>
+                <apellido>Rubio</apellido>
+            </profesor>
+        </asignatura>
+    </asignaturas>
+</listacursos>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE futbol>
+<futbol>
+    <equipo nombre="FC Barcelona" ciudad="Barcelona" entrenador="">
+        <jugador posicion="Centrocampista">
+            <nombre>Gavi</nombre>
+            <nacionalidad>Española</nacionalidad>
+        </jugador>
+        <jugador posicion="Centrocampista">
+            <nombre>Pedri</nombre>
+            <nacionalidad>Española</nacionalidad>
+        </jugador>
+    </equipo>
+    <equipo nombre="Real Madrid" ciudad="Madrid" entrenador="">
+        <jugador posicion="Delantero">
+            <nombre>Benzema</nombre>
+            <nacionalidad>Francesa</nacionalidad>
+        </jugador>
+        <jugador posicion="Centrocampista">
+            <nombre>Modric</nombre>
+            <nacionalidad>Croata</nacionalidad>
+        </jugador>
+    </equipo>
+</futbol>
